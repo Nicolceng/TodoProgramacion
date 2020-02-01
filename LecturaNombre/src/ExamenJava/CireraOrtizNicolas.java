@@ -16,7 +16,7 @@ public static void main(String[] args) throws InterruptedException {
 			//Al principio como de costumbre en Java, creamos nuestros teclados
 			Scanner teclado = new Scanner (System.in);
 			Scanner teclado1 = new Scanner (System.in);
-			//Introducimos todas las variables que vamos a usar en nuestro cÛdigo
+			//Introducimos todas las variables que vamos a usar en nuestro c√≥digo
 			String User;
 			String password;
 			String l1,l2,l3,l4,l5,s;
@@ -41,7 +41,7 @@ public static void main(String[] args) throws InterruptedException {
 			//limitamos los intentos con un contador el cual esta configurado en el if de abajo para que cuando sea mayor de 3 el programa se cierre
 			if(cont>3) {
 				System.out.println("USTED NO ES EL GRAN SABIO, NO PUEDE ACCEDER A LOS ARCHIVOS SAGRADOS");
-				break;
+				System.exit(0);
 			}
 			
 			//aqui declaramos que cuando el user y la password sean sus respectivas correctas combinaciones el user pueda pasar al siguiente menu
@@ -51,13 +51,13 @@ public static void main(String[] args) throws InterruptedException {
 			do {
 			
 			System.out.println("-----------------------------------------------");
-			System.out.println("S-> Salir del Sistema de archivos Sagrado (Introduzca la letra de su opciÛn en mayusculas, por favor)");
+			System.out.println("S-> Salir del Sistema de archivos Sagrado (Introduzca la letra de su opci√≥n en mayusculas, por favor)");
 			
-			System.out.println("L-> Hacer Checklist de preguntas Sagradas (Introduzca la letra de su opciÛn en mayusculas, por favor)");
+			System.out.println("L-> Hacer Checklist de preguntas Sagradas (Introduzca la letra de su opci√≥n en mayusculas, por favor)");
 			
-			System.out.println("C-> Realizar el calculo Sagrado (Introduzca la letra de su opciÛn en mayusculas, por favor)");
+			System.out.println("C-> Realizar el calculo Sagrado (Introduzca la letra de su opci√≥n en mayusculas, por favor)");
 			
-			System.out.println("P-> Planos de las pir·mides Sagradas (made by Aliens) (Introduzca la letra de su opciÛn en mayusculas, por favor)");
+			System.out.println("P-> Planos de las pir√°mides Sagradas (made by Aliens) (Introduzca la letra de su opci√≥n en mayusculas, por favor)");
 			
 			entrar = teclado1.nextLine();
 			//aqui imprimimos las opciones que posee el usuario para poder usar el programa
@@ -72,30 +72,30 @@ public static void main(String[] args) throws InterruptedException {
 			System.out.println("Usted ya ha hecho este checklist, por favor se le ruega no repetirlo por el bien de la sociedad Egipcia, tan solo introduzca 0 hasta cerrar el proceso");
 			}
 				
-			System.out.println("A continuacion acceder· a un sistema de preguntas sagradas, por favor conteste con cautela");
+			System.out.println("A continuacion acceder√° a un sistema de preguntas sagradas, por favor conteste con cautela");
 			Thread.sleep(1000);
 			//hacemos estos sleeps para retrasar el siguiente SYSO un segundo
-			System.out.println("øCu·l es el centro del universo?");
+			System.out.println("¬øCu√°l es el centro del universo?");
 			l1 = teclado.nextLine();
 			if(l1.equalsIgnoreCase("Egipto")) {contpreguntas++;}
 			System.out.print("");
 			//vamos incrementando nuestro contador en caso de que la respuesta sea correcta
-			System.out.println("øQuÈ nombre le damos al cielo?");
+			System.out.println("¬øQu√© nombre le damos al cielo?");
 			l2 = teclado.nextLine();
 			if(l2.equalsIgnoreCase("Nut")) {contpreguntas++;}
 			System.out.print("");
 			
-			System.out.println("øY al m·s all·?");
+			System.out.println("¬øY al m√°s all√°?");
 			l3 = teclado.nextLine();
 			if(l3.equalsIgnoreCase("Duat")) {contpreguntas++;}
 			System.out.print("");
 			
-			System.out.println("øNombre del padre del Rey Dyeser?");
+			System.out.println("¬øNombre del padre del Rey Dyeser?");
 			l4 = teclado.nextLine();
 			if(l4.equalsIgnoreCase("Sanajt")) {contpreguntas++;}
 			System.out.print("");
 			
-			System.out.println("øSobrenombre del Rey?");
+			System.out.println("¬øSobrenombre del Rey?");
 			l5 = teclado.nextLine();
 			if(l5.equalsIgnoreCase("Necherjet")) {contpreguntas++;}
 			//proseguimos incrementando...
@@ -106,7 +106,7 @@ public static void main(String[] args) throws InterruptedException {
 			
 			if(contpreguntas>=2 && contpreguntas<=4) {
 				System.out.println("<------------------------------------------------------------------------------------------------->");
-				System.out.println("Usted ha acertado "+contpreguntas+ " Est· bien pero debe estudiar m·s sobre nuestro Imperio Sagrado");
+				System.out.println("Usted ha acertado "+contpreguntas+ " Est√° bien pero debe estudiar m√°s sobre nuestro Imperio Sagrado");
 			}
 			//en estas ordenes IF le enviamos un mensaje al user respecto a cuantas ha tenido bien y un mensajito extra...
 			if(contpreguntas<2) {
@@ -130,7 +130,7 @@ public static void main(String[] args) throws InterruptedException {
 			
 			case "C": 
 			//aqui comenzamos con el calculo del area de nuestra piramide, metemos la altura y la apotema
-			System.out.println("Ahora vamos a realizar el calculo del area de la Sagrada Pir·mide, por favor introduzca los siguientes datos: "); 
+			System.out.println("Ahora vamos a realizar el calculo del area de la Sagrada Pir√°mide, por favor introduzca los siguientes datos: "); 
 			Thread.sleep(1000);
 			
 			System.out.print("Introduzca la altura: ");
@@ -152,12 +152,12 @@ public static void main(String[] args) throws InterruptedException {
 			
 			case "P" : 
 			//con P comenzamos el ciclo de las piramides, donde vamos a ir pidiendo al usuario la altura de la misma
-			System.out.println("A continuaciÛn se le van a mostrar 3 de las maravillas de Egipcio: ");
+			System.out.println("A continuaci√≥n se le van a mostrar 3 de las maravillas de Egipcio: ");
 			Thread.sleep(1000);
 			System.out.print("Introduzca la altura que desea que tenga su piramide-> ");
 			n = teclado1.nextInt();
 			System.out.print("");
-			//aquÌ imprimimos la primera de ellas, la cual es la original...
+			//aqu√≠ imprimimos la primera de ellas, la cual es la original...
 			for(int i=1; i<=n; i++) {
 			System.out.print("\n");
 			for(int j=1; j<=n-i; j++) {	
@@ -186,7 +186,7 @@ public static void main(String[] args) throws InterruptedException {
 			System.out.print("Introduzca la altura que desea que tenga su piramide-> ");
 			n2 = teclado1.nextInt();
 			System.out.print("");
-			//Y aquÌ la ˙ltima piramide, la escalera inversa.
+			//Y aqu√≠ la √∫ltima piramide, la escalera inversa.
 			for(int i=n2; i>=0; i--) {
 				System.out.print("\n");
 			for(int x=0; x<=i; x++) {
@@ -201,7 +201,7 @@ public static void main(String[] args) throws InterruptedException {
 			}//aqui ponemos la condicion del while para que se cierre el bucle while y el programa termine.... o no....
 			}while(!entrar.equalsIgnoreCase("S"));	
 			//Easter egg
-			System.out.println("Por ˙ltimo adoremos a los ... Constructores.....");
+			System.out.println("Por √∫ltimo adoremos a los ... Constructores.....");
 			for(int i=0; i<=100; i++) {
 				Thread.sleep(12);
 				System.out.println(i+"%");
